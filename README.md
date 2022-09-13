@@ -1,40 +1,53 @@
 # Alumni
 
-Alumni is a [high-level] React component library.
-
-It uses [Radix Primitives] and [Rosé Pine Theme].
-It follows [system-ui spec] and [macOS guidelines].
-
-[high-level]: https://en.wikipedia.org/wiki/Widget_toolkit
-[Rosé Pine Theme]: https://rosepinetheme.com/
-[system-ui spec]: https://system-ui.vercel.app/
-[macOS guidelines]: https://developer.apple.com/design/human-interface-guidelines/platforms/designing-for-macos/
+Alumni is designed for mac and web apps.
+In general, Alumni follows Apple's
+[Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/guidelines/overview),
+especially the
+[macOS section](https://developer.apple.com/design/human-interface-guidelines/platforms/designing-for-macos),
+with some optimisations for the web platform.
 
 ## Design
 
-In general, Alumni follows Apple's
-[Human Interface Guidelines][a-hig],
-especially the [macOS section][a-mac].
+### Accessibility
 
-[a-hig]: https://developer.apple.com/design/human-interface-guidelines/guidelines/overview
-[a-mac]: https://developer.apple.com/design/human-interface-guidelines/platforms/designing-for-macos
+All Alumni components adhere to the 
+[WAI-ARIA design patterns](https://www.w3.org/TR/wai-aria-practices-1.2)
+out of the box.
 
-In term of accessibility, Alumni 
-due to its target platform (web)
-and underlying technologies (Radix)
+### Colour
+
+Alumni uses Rosé Pine's
+[15-colour palette](https://rosepinetheme.com/docs/usage)
+Alumni also supports light, dark, and high-contrast color schemes.
+
+### Typography
+
+Alumni features Rasmus Andersson's
+[Inter](https://rsms.me/inter/)
+as its main typeface.
+For other aspects, such as sizes and line heights,
+Alumni follows
+[macOS typography](https://developer.apple.com/design/human-interface-guidelines/foundations/typography#specifications).
 
 ## Develop
 
-Alumni
+### Radix
 
-As a high-level component library,
-Alumni is based on a low-level one,
-[Radix Primitives](https://www.radix-ui.com/)
+Most components in Alumni are built on top of
+[Radix Primitives](https://www.radix-ui.com/),
+follow official suggestions whenever possible.
 
-[React]: https://reactjs.org/
-[Radix Primitives]: 
-https://www.w3.org/TR/wai-aria-practices-1.2
+As a result, Alumni only supports
+[React](https://reactjs.org/)
+at the moment.
 
-fully-typed, consistent API
 
-As a high-level component library, Alumni is based on the low-level component library
+### TypeScript
+
+Alumni is written in
+[TypeScript](https://www.typescriptlang.org/)
+[strict mode](https://www.typescriptlang.org/tsconfig#strict).
+Its API is fully typed and based on Radix.
+Using TypeScript in your application is optional but recommended.
+
