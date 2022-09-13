@@ -23,31 +23,30 @@ Alumni also supports light, dark, and high-contrast color schemes.
 
 ### Typography
 
-Alumni features Rasmus Andersson's
+Alumni features
 [Inter](https://rsms.me/inter/)
 as its main typeface.
-For other aspects, such as sizes and line heights,
-Alumni follows
-[macOS typography](https://developer.apple.com/design/human-interface-guidelines/foundations/typography#specifications).
+For other typography aspects, such as font sizes and line heights,
+we follow the latest
+[macOS guidelines](https://developer.apple.com/design/human-interface-guidelines/foundations/typography#specifications).
 
 ## Develop
 
 ### Radix
 
 Most components in Alumni are built on top of
-[Radix Primitives](https://www.radix-ui.com/),
-follow official suggestions whenever possible.
-
-As a result, Alumni only supports
-[React](https://reactjs.org/)
-at the moment.
-
+[Radix Primitives](https://www.radix-ui.com/).
+The component abstractions follow official suggestions whenever possible.
 
 ### TypeScript
 
 Alumni is written in
 [TypeScript](https://www.typescriptlang.org/)
 [strict mode](https://www.typescriptlang.org/tsconfig#strict).
-Its API is fully typed and based on Radix.
-Using TypeScript in your application is optional but recommended.
+We utilises the typing of underlying libraries whenever possible.
 
+### Stitches
+
+Alumni uses
+[Stitches]()
+internally 
